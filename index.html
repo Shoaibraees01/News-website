@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The News Paper</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/j.png">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="assets/j.png" alt="The News Paper Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#" class="active" data-category="general">Home</a></li>
+        <li><a href="#" data-category="politics">Politics</a></li>
+        <li><a href="#" data-category="health">Health</a></li>
+        <li><a href="#" data-category="sports">Sports</a></li>
+        <li><a href="#" data-category="business">Business</a></li>
+        <li><a href="#" data-category="technology">Technology</a></li>
+        <li><a href="#" data-category="general">International</a></li>
+        <li><a href="#" data-category="general">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Breaking News -->
+  <section class="breaking-news">
+    <span>Breaking News:</span>
+    <marquee>Loading latest headlines...</marquee>
+  </section>
+
+  <!-- Trending News (Black Section) -->
+  <section class="trending-news">
+    <h2> Trending News</h2>
+    <div id="trending-container" class="trending-container"></div>
+  </section>
+
+  <!-- Layout -->
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="#" data-category="politics">Politics</a></li>
+        <li><a href="#" data-category="health">Health</a></li>
+        <li><a href="#" data-category="sports">Sports</a></li>
+        <li><a href="#" data-category="business">Business</a></li>
+        <li><a href="#" data-category="technology">Technology</a></li>
+        <li><a href="#" data-category="general">International</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main News Section -->
+    <main class="main-content">
+      <h2>Latest News</h2>
+      <div id="news-container" class="news-container"></div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
